@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden;
+    
+    background: linear-gradient( rgb(237, 255, 34), 35%, black);
+    background-size: cover;
+}
+
+.box {
+    position:absolute;
+    width: 80%;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 8%;
+    margin-top: 0%;
+}
+
+h2 {
+    font-size: 60px;
+    color: deeppink;
+}
+
+.name {
+    padding: 5% 0 0 8%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 12% 3% 8%;
+}
+
+nav ul li {
+    display: inline;
+    color:black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+nav ul li a:hover {
+    color:deeppink; 
+    text-shadow:deeppink 1px 0px 40px;
+    transition: 0.3s;
+}
+
+.arrow img {
+    height:auto;
+    width: 40px;
+    display: block;
+    transform: rotate(90deg);
+}
+
+.arrow img:hover {
+    transform: scale(1.4) rotate(90deg);
+    transition: 0.3s;
+}
+
+.toTop img {
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+    height:auto;
+    width: 40px;
+    display: block;
+    transform: rotate(180deg);
+}
+
+.toTop img:hover {
+    transform: scale(1.4) rotate(180deg);
+    transition: 0.3s;
+}
+
+.mail form {
+    width: 400px;
+    max-width: 100%;
+    position: absolute;
+    right: 8%;
+    bottom: 25%;
+
+}
+
+.mail form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 110px 14px 15px;
+    border: 2px solid deeppink;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(255, 173, 217);
+    color: black;
+    font-size: 20px;
+}
+
+.mail form button {
+    position:absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: deeppink;
+    color: white;
+    top: 5px;
+    right: 5px;
+    height: 82%;
+    width:25%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.mail form button:hover {
+    
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.info {
+    padding: 4% 0 0 8%;
+}
+
+.info h3 {
+    font-weight:300;
+    font-size: 30px;
+    color: rgba(237, 255, 34, 1.0);
+    padding-bottom: 1%;
+}
+
+.info h3 a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.info h3 a:hover {
+    text-shadow:rgb(237, 255, 34) 0px 0px 50px;
+    transition: 0.3s;
+}
+
+.contacts {
+    width: 100%;
+    height: 20vh;
+    background-color:black;
+    position:relative;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+}
+
+.contSpace {
+    position:absolute;
+    width: 96%;
+    height: 0vh;
+    background: black;
+    margin-left: 1%;
+    margin-top: 0%;
+}
+
+.contacts li {
+    display: inline;
+    color:rgba(237, 255, 34, 0.6);
+    font-size: 18;
+    padding-left: 0%;
+    
+}
+
+.contacts ul.links li a{
+    color:deeppink;
+    font-size: 20;
+}
+
+.ph {
+    font-size: 30px;
+    font-weight:300;
+    color: rgba(237, 255, 34, 0.6);
+    padding: 1% 0% 4% 0.2%;
+}
+
+.slider{
+    max-width: 350px;
+    position: relative;
+    margin: 2% 0 0 8%;
+    height: 450px;
+}
+
+.slider .el img {
+    width: 100%;
+    height: 450px;
+}
+
+.slider .previous img {
+    height:auto;
+    width: 40px;
+    display: block;
+    transform: rotate(90deg);
+}
+
+.slider .next img {
+    height:auto;
+    width: 40px;
+    display: block;
+    transform: rotate(-90deg);
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 210px;
+    width: auto;
+    padding: 6px;
+}
+
+.slider .next {
+    right: 6px;
+}
+
+.slider .el {
+    animation-name: appear;
+    animation-duration: 0.5s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.previous:hover, .next:hover {
+    transform: scale(1.4);
+    filter: drop-shadow(0px -2px deeppink);
+    transition: 0.5s;
+}
+
+.video1 video {
+    width: auto;
+    height: 450px;
+    position: relative;
+    margin-left: 48%;
+    transform: translateY(-101%);
+}
+
+.video2 video {
+    width: auto;
+    height: 450px;
+    position: relative;
+    margin-left: 72%;
+    transform: translateY(-202%);
+}
+
+
