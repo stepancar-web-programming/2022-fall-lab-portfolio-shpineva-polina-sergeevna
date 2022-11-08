@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./web_page/style/contactStyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="arrow">
+                    <a href="index.html"><img src = './web_page/imgs/Arrow-down.svg'></a>
+                </div>
+                <ul>
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#education">Education</a></li>
+                    <li><a href="contacts.html">Contact Me</a></li>
+                    <li><a href="index.html">Main Page</a></li>
+                </ul>
+            </nav>
+            <div class="box" style="height:120vh">
+                <div class="name">
+                    <h2>My Hobbies</h2>
+                    <h3 class="ph">Photography</h3>
+                </div>
+                <script src="./web_page/animation/script.js" defer></script>
+                <div class="slider">
+                    <div class="el">
+                      <img src="./imgs/photo3.jpg">
+                    </div>
+                    <div class="el">
+                        <img src="./imgs/photo2.jpg">
+                    </div>
+                    <div class="el">
+                        <img src="./imgs/photo5.jpg">
+                    </div>
+                    <div class="el">
+                        <img src="./imgs/photo6.jpg">
+                    </div>
+                    <div class="el">
+                        <img src="./imgs/photo7.jpg">
+                    </div>
+                    <div class="el">
+                        <img src="./imgs/photo8.jpg">
+                    </div>
+                    <div class="el">
+                        <img src="./imgs/photo13.jpg">
+                    </div>
+                    <div class="el">
+                        <img src="./imgs/photo14.jpg">
+                    </div>
+                
+                    <a class="previous" onclick="previous()"><img src="./web_page/imgs/Arrow-down.svg"></a>
+                    <a class="next" onclick="next()"><img src="./web_page/imgs/Arrow-down.svg"></a>
+                </div>
+                <div class="video1">
+                    <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                        <source src="./web_page/imgs/video1.mp4" type="video/mp4"/>
+                    </video>    
+                </div>
+                <div class="video2">
+                    <video controls>
+                        <source src="./web_page/imgs/video2.mp4" type="video/mp4"/>
+                    </video>    
+                </div>
+            </div>
+                
+        </div>
+        <div class="toTop">
+            <a href="#"><img src="./web_page/imgs/Arrow-down.svg"></a>
+        </div>
+        <section class="contacts">
+            <div class="contSpace">
+                <nav>
+                    <ul>
+                        <li><span style="color:deeppink">Phone:</span>  +7 (981) 708-16-72 </li>
+                        <li><span style="color:deeppink">Gmail:</span>  polina.shpineva@gmail.com</li>
+                    </ul>
+                    <ul class="links">
+                        <li><a href="https://www.linkedin.com/in/polina-shpineva-795525240/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://gitlab.com/polina.shpineva" target="_blank">GitLab</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </body>
+</html>
