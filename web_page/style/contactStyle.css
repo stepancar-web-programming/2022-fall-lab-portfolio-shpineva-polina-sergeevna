@@ -203,7 +203,7 @@ nav ul li a:hover {
     height: 450px;
 }
 
-.slider .el img {
+.slider .element img {
     width: 100%;
     height: 450px;
 }
@@ -234,7 +234,7 @@ nav ul li a:hover {
     right: 6px;
 }
 
-.slider .el {
+.slider .element {
     animation-name: appear;
     animation-duration: 0.5s;
 }
