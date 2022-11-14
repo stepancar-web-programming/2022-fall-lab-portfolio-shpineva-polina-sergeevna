@@ -11,19 +11,18 @@ function previous() {
 }
 
 function show(n) {
-    let cur = document.getElementsByClassName("el");
+    const currentImg = document.getElementsByClassName("element");
 
-    if (n > cur.length) {
+    if (n > currentImg.length) {
       idx = 1
     }
     else if (n < 1) {
-        idx = cur.length
+        idx = currentImg.length
     }
 
-    for (let s of cur) {
+    for (let s of currentImg) {
         s.style.display = "none";
     }
 
-    cur[idx-1].style.display = "block";
+    currentImg[idx-1].style.display = "block";
 }
-
